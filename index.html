@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #contact-list {
+      margin-top: 20px;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    #contact-list th, #contact-list td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    #contact-list th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    form input {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact List</h1>
+
+  <!-- Formulário para adicionar novo contato -->
+  <form id="add-contact-form">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="text" id="phone" placeholder="Phone" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Add</button>
+  </form>
+
+  <!-- Tabela para exibir a lista de contatos -->
+  <table id="contact-list">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Linhas de contatos aparecerão aqui -->
+    </tbody>
+  </table>
+
+  <script src="contactList.js"></script>
+</body>
+</html>
